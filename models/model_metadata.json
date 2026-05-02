@@ -1,0 +1,56 @@
+{
+  "best_model": "xgboost",
+  "feature_cols": [
+    "month_sin",
+    "month_cos",
+    "week_of_year_sin",
+    "week_of_year_cos",
+    "quarter",
+    "is_q4",
+    "is_year_end",
+    "is_summer",
+    "is_holiday_season",
+    "year",
+    "week_of_year",
+    "product_name_enc",
+    "category_name_enc",
+    "order_region_enc",
+    "market_enc",
+    "days_shipping_real",
+    "days_shipping_scheduled",
+    "shipping_delay",
+    "delay_ratio",
+    "is_late",
+    "is_chronically_late",
+    "item_discount_rate",
+    "order_count",
+    "demand_lag_1w",
+    "demand_lag_2w",
+    "demand_lag_4w",
+    "demand_lag_8w",
+    "demand_lag_12w",
+    "demand_roll_mean_4w",
+    "demand_roll_std_4w",
+    "demand_roll_mean_8w",
+    "demand_roll_std_8w",
+    "demand_roll_mean_12w",
+    "demand_roll_std_12w"
+  ],
+  "metrics": {
+    "xgboost": {
+      "label": "XGBoost",
+      "MAE": 3.5335,
+      "RMSE": 7.6062,
+      "MAPE": 36.4489
+    },
+    "prophet": {
+      "label": "Prophet",
+      "MAE": 706.696,
+      "RMSE": 736.0967,
+      "MAPE": 2842.4198
+    }
+  },
+  "train_size": 15221,
+  "test_size": 467,
+  "n_products": 91
+}
